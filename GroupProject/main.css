@@ -1,0 +1,161 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Quicksand;
+    width: 100%;
+    background: url("bg5.jpg") no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    /* background-position: center;  */
+}
+
+.button {
+    padding: 10px 15px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #f49e42;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #f4f142;
+    margin: 15px 15px 15px 15px;
+}
+
+#btn-ok {
+    width: 100px;
+}
+
+.button:hover {
+    background-color: #db7202
+}
+
+.button:active {
+    background-color: #db7202;
+    box-shadow: 0 5px #f4f142;
+    transform: translateY(4px);
+}
+
+#score {
+    margin: 15px 20px 15px 20px;
+}
+
+hr {
+    height: 3px;
+    border: none;
+    color: #f4f142;
+    background-color: #f4f142;
+}
+
+#img-fish {
+    /* background-image: url(charging.png); */
+    background-repeat: no-repeat;
+    height: 102px;
+    width: 140px;
+}
+
+#img-fish-hor-vert {
+    -moz-transform: scale(-1, -1);
+    -o-transform: scale(-1, -1);
+    -webkit-transform: scale(-1, -1);
+    transform: scale(-1, -1);
+}
+
+#ac-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, .6);
+    z-index: 1001;
+}
+
+#popup {
+    width: 555px;
+    height: 375px;
+    background: #046a8c;
+    border: 5px solid #000;
+    border-radius: 25px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    box-shadow: #64686e 0px 0px 3px 3px;
+    -moz-box-shadow: #64686e 0px 0px 3px 3px;
+    -webkit-box-shadow: #64686e 0px 0px 3px 3px;
+    position: absolute;
+    top: 150px;
+    left: 375px;
+    color: white;
+    font-size: 17px;
+    padding: 20px 20px 20px 20px;
+}
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    text-align: center;
+  }
+@-webkit-keyframes animatetop {
+    from {top:-200px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-200px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #f49e42;
+    color: white;
+  }
+  
+  .modal-body {padding: 2px 16px;}
+  .modals{
+      font-weight: bold;
+  }

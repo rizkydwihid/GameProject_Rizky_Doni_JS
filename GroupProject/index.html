@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" id="bootstrap-css" href="bootstrap.min.css">
+        <link rel="stylesheet" href="main.css">
+        <title>Fish Feeder</title>
+    </head>
+    <body>
+        <audio id="audio_bgm" src="FunnyMusic-2018-09-22_-_Seriously_-_David_Fesliyan.mp3" autoplay="autoplay" hidden="hidden"></audio>
+        <hr>
+        <div id="ac-wrapper">
+            <div id="popup">
+            <center><i class="fa fa-trophy" aria-hidden="true"></i>
+            <h2>WELCOME TO <br>FISH EATER GAME!!</h2><br>
+            <p>Nikmati keseruan bermain game memakan ikan kecil, namun berhati-hatilah karena akan banyak ikan predator disana!! <br> Selamat bermain dan semoga dapat membuat kalian senang <i class="fa fa-smile-o" aria-hidden="true"></i></p>
+            <input id="btn-ok" class="button" type="button" name="submit" value="OK" onclick="PopUp()">
+            </center></div>
+            </div><br>
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h2>Rule Game</h2><i class="fa fa-info-circle" aria-hidden="true"></i>
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <p><i class="fa fa-check" aria-hidden="true"></i> Gunakan tombol <span class="modals">arah atas <i class="fa fa-arrow-up" aria-hidden="true"></i>, 
+                        bawah <i class="fa fa-arrow-down" aria-hidden="true"></i>, kanan <i class="fa fa-arrow-right" aria-hidden="true"></i>, 
+                        dan kiri <i class="fa fa-arrow-left" aria-hidden="true"></i></span> pada keyboard untuk menggerakkan si ikan lucu bernama <span class="modals">"The Tun".</span></p>
+                    <p><i class="fa fa-check" aria-hidden="true"></i> Makan sebanyak mungkin ikan kecil yang ada, agar si <span class="modals">"The Tun".</span> bertambah besar dan nantinya bisa memakan si ikan predator.</p>
+                    <p><i class="fa fa-check" aria-hidden="true"></i> Hati-hati dengan ikan predator yang tiba-tiba muncul, dia bisa memakan kalian. Dan permainan akan <span class="modals">GAME OVER!!</span></p>
+                </div>
+            </div>
+            </div>
+            <div class="row justify-content-center">
+            <input id="rule" class="button" type="button" name="" value="Rule Game">    
+            <input class="button" type="button" name="" value="Start Game" onclick="startGame()">
+            <button id="togglebgm" class="button" type="button" name="" value="Mute"><i class="fa fa-volume-off" aria-hidden="true"></i></button>
+            <!-- <a href="#noscroll" >toggle sound</a> -->
+            <!-- <input id="mute" class="button" type="button" name="" value="Start Game"> -->
+            <h2 id="score">Score : 0</h2>
+            </div>
+            <div class="popup">
+               
+            </div>  
+            </div>
+        </div>
+    </body>
+    <script src="main.js"></script>
+</html> 
